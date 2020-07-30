@@ -2,7 +2,7 @@
 
 本文档将会介绍传入 `Zele` 的 `config` 的格式
 
-```js
+``` js
 <ZEle
 	namespace=""
 	config={  }   //  <---- 本文档介绍内容
@@ -12,7 +12,8 @@
 `config` 是 `ZEle` 里面的重要参数, 决定了 `ZEle` 渲染的内容
 
 ##### config 数据结构
-```js
+
+``` js
 {
   layout: '',
   title: '',
@@ -40,7 +41,7 @@
  - 可对列表项进行删除
  - 点击 新增/编辑 进行页面跳转
 
-```js
+``` js
 {
   layout: 'TitleContnet', // 页面级别的 Layout
   title: '员工管理',  // 可选, 由上面的 layout 控制显示效果
@@ -103,4 +104,3 @@
   ]
 }
 ```
-

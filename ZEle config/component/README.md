@@ -30,7 +30,7 @@
 
 #### fields
 
-标准的 `ZEle field` 组成的列表, 将会渲染成为表格的 `columns`
+标准的 `ZEle field` 组成的列表, 将会渲染成为表格的 `columns` 
 
 #### operation
 
@@ -64,6 +64,15 @@
 
 ### Search
 
+渲染为一个搜索组件, 它会与同一个 `namespace` 下面的 `Table` 绑定
+它的主要配置项为
+
+* fields
+
+#### fields
+
+标准的 `ZEle field` 组成的列表, 将会渲染成为用于搜索表格的字段域 
+
 ### Form
 
 `Form` 将渲染为一个表单, 它的主要配置为
@@ -90,4 +99,3 @@
 #### fields
 
 标准的 `ZEle field` 组成的列表, 将会渲染具体的表单域
-
