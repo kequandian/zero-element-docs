@@ -26,18 +26,20 @@ npm link
  - [json](../zero-json/json.md)
 
 ``` 
-例如 config/config.json
+例如 [config.json存放目录]/config.json
 ```
 
-然后在后台管理项目pages目录下
+然后在后台管理项目pages目录下 web/src/pages
 通过zero-json manage gen "目录名称" -i "json文件所在目录" 直接生成 CRUD 页面代码
 
 ``` 
-例如zero-json manage gen test -i ./config/config.json 
+例如zero-json manage gen test -i [config.json存放目录]/config.json 
 生成的CRUD页面代码在test目录下
 ```
 
-需要在后台管理项目public目录下的对config.js进行设置
+后台管理项目布局设置
+
+一、全局设置  web/public/config.js
 - [config](../zero-json/config.md)
 
 ``` 
@@ -48,12 +50,69 @@ if (window.ZEle === undefined) {
   window.ZEle = {};
 }
 window.ZEle.endpoint = "http://localhost:8089";//设置为本机地址
-window.ZEle.nav = "top";
+window.ZEle.nav = "letf";
 window.ZEle.theme = "#1890ff";
-window.ZEle.indexPage = "/test"; //这里设置为生成的test目录
-window.ZEle.breadcrumb = false;
+window.ZEle.indexPage = "/test"; //这里设置的路径为初始化展示页面
+window.ZEle.breadcrumb = true;  //面包屑设置
 
 window.ZEle.remoteConfig = {};
+```
+
+二、树形菜单设置  web/src/config/router.config.js
+
+- [router.config](../zero-json/router.config.md)
+``` 
+例如
+module.exports = [
+  {
+    name: '测试管理',   //一级菜单名
+    path: '/tests', 
+    items: [
+      {
+        name: '测试列表',      //二级菜单名
+        path: '/tests/test',
+      },
+    ],
+  },
+  /*{
+    name: '一级菜单',
+    path: '/b',
+    items: [
+      {
+        path: '/b/c',
+        name: '二级菜单',
+      },
+    ],
+  },*/
+]
+```
+三、页面布局设置 web/src/pages/test/config/*.js
+
+- [layout](../zero-json/layout.md)
+
+``` 
+例如
+const setting = require('./test-setting.json');
+
+module.exports = {
+  layout: 'TitleContent',
+  title: '新增' + setting.pageName,
+  items: [
+    {
+      component: 'Form',
+      config: {
+        API: {
+          createAPI: setting.createAPI,
+        },
+		layout: "Grid",                //layout设置，调整表单布局     
+		layoutConfig: {
+			value: [12,12]
+		},
+        fields: setting.formFields,
+      },
+    },
+  ],
+};
 ```
 
 最后启动项目

@@ -1,0 +1,194 @@
+Index: zero-json/README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>##zero-json\r\n#### 在新项目中使用\r\n\r\n推荐直接使用 cli [zero-json](https://github.com/kequandian/zero-json) 工具来初始化一个新的项目，这样就无需进行上面的引用步骤\r\n\r\n### 安装\r\n\r\n``` bash\r\ngit clone git@github.com:kequandian/zero-json.git\r\nnpm install \r\nnpm link\r\n\r\n```\r\n\r\n### 使用\r\n通过如下方式引用:\r\n\r\n在项目的根目录下, 通过命令zero-json manage init \"目录名称\" 初始化一个后台管理项目\r\n\r\n``` \r\n例如 zero-json manage init web \r\n```\r\n\r\n然后在项目下新建一个目录存放json配置文件:\r\n\r\n - [json](../zero-json/json.md)\r\n\r\n``` \r\n例如 config/config.json\r\n```\r\n\r\n然后在后台管理项目pages目录下\r\n通过zero-json manage gen \"目录名称\" -i \"json文件所在目录\" 直接生成 CRUD 页面代码\r\n\r\n``` \r\n例如zero-json manage gen test -i ./config/config.json \r\n生成的CRUD页面代码在test目录下\r\n```\r\n\r\n需要在后台管理项目public目录下的对config.js进行设置\r\n- [config](../zero-json/config.md)\r\n\r\n``` \r\n例如\r\nimport {set as APIConfig} from \"zero-element/lib/config/APIConfig\";\r\n\r\nif (window.ZEle === undefined) {\r\n  window.ZEle = {};\r\n}\r\nwindow.ZEle.endpoint = \"http://localhost:8089\";//设置为本机地址\r\nwindow.ZEle.nav = \"top\";\r\nwindow.ZEle.theme = \"#1890ff\";\r\nwindow.ZEle.indexPage = \"/test\"; //这里设置为生成的test目录\r\nwindow.ZEle.breadcrumb = false;\r\n\r\nwindow.ZEle.remoteConfig = {};\r\n```\r\n\r\n最后启动项目\r\n``` \r\nnpm start\r\n```
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- zero-json/README.md	(revision bb71c8310dd390267224aa2be440667ca914e427)
++++ zero-json/README.md	(date 1596533537993)
+@@ -26,18 +26,20 @@
+  - [json](../zero-json/json.md)
+ 
+ ``` 
+-例如 config/config.json
++例如 [config.json存放目录]/config.json
+ ```
+ 
+-然后在后台管理项目pages目录下
++然后在后台管理项目pages目录下 web/src/pages
+ 通过zero-json manage gen "目录名称" -i "json文件所在目录" 直接生成 CRUD 页面代码
+ 
+ ``` 
+-例如zero-json manage gen test -i ./config/config.json 
++例如zero-json manage gen test -i [config.json存放目录]/config.json 
+ 生成的CRUD页面代码在test目录下
+ ```
+ 
+-需要在后台管理项目public目录下的对config.js进行设置
++后台管理项目布局设置
++
++一、全局设置  web/public/config.js
+ - [config](../zero-json/config.md)
+ 
+ ``` 
+@@ -48,15 +50,72 @@
+   window.ZEle = {};
+ }
+ window.ZEle.endpoint = "http://localhost:8089";//设置为本机地址
+-window.ZEle.nav = "top";
++window.ZEle.nav = "letf";
+ window.ZEle.theme = "#1890ff";
+-window.ZEle.indexPage = "/test"; //这里设置为生成的test目录
+-window.ZEle.breadcrumb = false;
++window.ZEle.indexPage = "/test"; //这里设置的路径为初始化展示页面
++window.ZEle.breadcrumb = true;  //面包屑设置
+ 
+ window.ZEle.remoteConfig = {};
+ ```
+ 
++二、树形菜单设置  web/src/config/router.config.js
++
++- [router.config](../zero-json/router.config.md)
++``` 
++例如
++module.exports = [
++  {
++    name: '测试管理',   //一级菜单名
++    path: '/tests', 
++    items: [
++      {
++        name: '测试列表',      //二级菜单名
++        path: '/tests/test',
++      },
++    ],
++  },
++  /*{
++    name: '一级菜单',
++    path: '/b',
++    items: [
++      {
++        path: '/b/c',
++        name: '二级菜单',
++      },
++    ],
++  },*/
++]
++```
++三、页面布局设置 web/src/pages/test/config/*.js
++
++- [layout](../zero-json/layout.md)
++
++``` 
++例如
++const setting = require('./test-setting.json');
++
++module.exports = {
++  layout: 'TitleContent',
++  title: '新增' + setting.pageName,
++  items: [
++    {
++      component: 'Form',
++      config: {
++        API: {
++          createAPI: setting.createAPI,
++        },
++		layout: "Grid",                //layout设置，调整表单布局     
++		layoutConfig: {
++			value: [12,12]
++		},
++        fields: setting.formFields,
++      },
++    },
++  ],
++};
++```
++
+ 最后启动项目
+ ``` 
+ npm start
+-```
+\ No newline at end of file
++```
+Index: zero-json/config.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>##后台管理项目public目录下config.js配置示例\r\n\r\nimport {set as APIConfig} from \"zero-element/lib/config/APIConfig\";\r\n\r\nif (window.ZEle === undefined) {\r\n  window.ZEle = {};\r\n}\r\nwindow.ZEle.endpoint = \"http://localhost:8089\";//设置为本机地址\r\nwindow.ZEle.nav = \"top\";\r\nwindow.ZEle.theme = \"#1890ff\";\r\nwindow.ZEle.indexPage = \"/test\";\r\nwindow.ZEle.breadcrumb = false;\r\n\r\nwindow.ZEle.remoteConfig = {};\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- zero-json/config.md	(revision bb71c8310dd390267224aa2be440667ca914e427)
++++ zero-json/config.md	(date 1596532083094)
+@@ -6,9 +6,9 @@
+   window.ZEle = {};
+ }
+ window.ZEle.endpoint = "http://localhost:8089";//设置为本机地址
+-window.ZEle.nav = "top";
++window.ZEle.nav = "letf";
+ window.ZEle.theme = "#1890ff";
+-window.ZEle.indexPage = "/test";
+-window.ZEle.breadcrumb = false;
++window.ZEle.indexPage = "/test"; //这里设置的路径为初始化展示页面
++window.ZEle.breadcrumb = true;  //面包屑设置
+ 
+ window.ZEle.remoteConfig = {};
+Index: zero-json/layout.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- zero-json/layout.md	(date 1596533337661)
++++ zero-json/layout.md	(date 1596533337661)
+@@ -0,0 +1,21 @@
++const setting = require('./test-setting.json');
++
++module.exports = {
++  layout: 'TitleContent',
++  title: '新增' + setting.pageName,
++  items: [
++    {
++      component: 'Form',
++      config: {
++        API: {
++          createAPI: setting.createAPI,
++        },
++		layout: "Grid",                //layout设置，调整表单布局     
++		layoutConfig: {
++			value: [12,12]
++		},
++        fields: setting.formFields,
++      },
++    },
++  ],
++};
+\ No newline at end of file
+Index: zero-json/router.config.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- zero-json/router.config.md	(date 1596532672427)
++++ zero-json/router.config.md	(date 1596532672427)
+@@ -0,0 +1,22 @@
++module.exports = [
++  {
++    name: '测试管理',   //一级菜单名
++    path: '/tests', 
++    items: [
++      {
++        name: '测试列表',      //二级菜单名
++        path: '/tests/test',
++      },
++    ],
++  },
++  /*{
++    name: '一级菜单',
++    path: '/b',
++    items: [
++      {
++        path: '/b/c',
++        name: '二级菜单',
++      },
++    ],
++  },*/
++]
