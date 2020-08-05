@@ -45,15 +45,15 @@
 
 - layout
 
-  > 页面级别设置，比如layout: 'TitleContnet'
+  > 页面级别的 `layout` 设置, 比如 layout: 'TitleContnet'
 
-- title 
+- title
 
-  > 标题设置，可选。比如title: '员工管理'
+  > 标题设置, 可选。比如 title: '员工管理'
 
-- items 
+- items
 
-  > []里可添加component组件设置,如Search，Tabe，Form
+  > []里可添加component组件设置, 如 Search, Tabe, Form
 
 ```javascript
 {
@@ -78,7 +78,7 @@
         },
         acitons: [
           { title: '新增员工', type: 'path', options: {
-                path: '/sys/uers-add',  // 点击新增员工时，跳转到这个页面
+                path: '/sys/uers-add',  // 点击新增员工时, 跳转到这个页面
               }
           }
         ],
@@ -108,7 +108,7 @@
         operation: [
           { title: '编辑', type: 'path', options: {
             outside: true,
-            path: '/sys/uers-edit',    // 点击编辑时，跳转到这个页面
+            path: '/sys/uers-edit',    // 点击编辑时, 跳转到这个页面
           }
           },
           { title: '删除', type: 'delete' }, // 默认会调用上面的 API.deleteAPI

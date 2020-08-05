@@ -8,13 +8,13 @@
 - Search, 用于索引
 - Form, 用于提交表单数据, 如添加, 编辑
 
-## Table组件属性
+## Table 组件属性
 
 `Table` 用于渲染一个表格, 主要用于显示列表内容, 它的主要属性配置如下
 
 - API
 - actions, 用于新增数据等操作
-- fields, 显示列表内容
+- fields, 显示列表内容, 是[标准 field](./标准%20field)
 - operation, 用于 编辑/删除
 
 ```javascript
@@ -41,7 +41,7 @@
 }
 ```
 
-### Table组件API配置
+### Table 组件 API 配置
 
 可分为以下两个配置项
 
@@ -60,7 +60,7 @@ API: {
 }
 ```
 
-### Table组件actions配置
+### Table 组件 actions 配置
 
 `Table` 的 action, 通常是 新增数据等操作, 例如
 
@@ -70,9 +70,9 @@ actions: [
 ],
 ```
 
-### Table组件fields配置
+### Table 组件 fields 配置
 
-标准的 `ZEle field` 组成的列表, 将会渲染成为表格的 `columns`
+由 [标准 field](./标准%20field) 组成的列表, 将会渲染成为表格的 `columns`
 
 ```javascript
 fields: [
@@ -81,7 +81,7 @@ fields: [
 ]
 ```
 
-### Table组件operation配置
+### Table 组件 operation 配置
 
 `operation` 是指对 `Table` 数据里面的单行进行操作, 通常用于 编辑/删除
 
@@ -91,15 +91,15 @@ operation: [
 ]
 ```
 
-## Search组件属性
+## Search 组件属性
 
 渲染为一个搜索组件, 它会与同一个 `namespace` 下面的 `Table` 绑定 它的主要配置项为
 
-- fields
+- fields, 是[标准 field](./标准%20field)
 
-### Search组件fields配置
+### Search 组件 fields 配置
 
-标准的 `ZEle field` 组成的列表, 将会渲染成为用于搜索表格的字段域
+由 [标准 field](./标准%20field) 组成的列表, 将会渲染成为用于搜索表格的字段域
 
 ```javascript
 {
@@ -115,12 +115,12 @@ operation: [
 
 --------------------------------------------------------------------------------
 
-## Form组件属性
+## Form 组件属性
 
 `Form` 将渲染为一个表单, 它的主要配置为
 
 - API
-- fields
+- fields, 是[标准 field](./标准%20field)
 
 ```javascript
 {
@@ -139,7 +139,7 @@ operation: [
 }
 ```
 
-### Form组件属性API配置
+### Form 组件属性 API 配置
 
 可分为以下配置项
 
@@ -157,7 +157,6 @@ API: { createAPI: '/api/sys/uers', }
 
 ```javascript
 API: { getAPI: '/api/sys/uers/(id)', }
-`
 ```
 
 - updateAPI
@@ -168,12 +167,11 @@ API: { getAPI: '/api/sys/uers/(id)', }
 API: {
   updateAPI: '/api/sys/uers/(id)',
 }
-`
 ```
 
-#### Form组件fields配置
+#### Form 组件 fields 配置
 
-标准的 `ZEle field` 组成的列表, 将会渲染具体的表单域
+由 [标准 field](./标准%20field) 组成的列表, 将会渲染具体的表单域
 
 ```javascript
 fields: [ { label: '', field: '' }, ... ]
