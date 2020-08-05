@@ -60,3 +60,10 @@ export default function Page() {
   return <ZEle namespace="test" config={config} />
 }
 ```
+
+## 开发索引
+
+> * [数据域说明(namespace)](./ZEle%20namespace/namespace.md)
+> * [配置说明(config)](./ZEle%20config/config.md)
+> * [组件说明(compoent)](./ZEle%20config/component.md)
+
