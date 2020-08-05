@@ -1,7 +1,7 @@
 # component
 配置里面的 `component` 决定了 `ZEle` 渲染哪些组件
 
-`ZEle` 里面预设了一下一些常用的 `component`组件 
+`ZEle` 里面预设了以下一些常用的 `component`组件 
 * Table,用于显示列表内容
 * Search，用于索引
 * Form，用于提交表单数据，如添加，编辑
