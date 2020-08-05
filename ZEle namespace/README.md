@@ -1,11 +1,11 @@
 # ZEle namespace
 
-本文档将会介绍传入 `Zele` 的 `namespace` 
+本文档将会介绍传入 `Zele` 的 `namespace`
 
-``` js
+```javascript
 <ZEle
-	namespace=""  //  <---- 本文档介绍内容
-	config={  }
+    namespace=""  //  <---- 本文档介绍内容
+    config={  }
 />
 ```
 
@@ -15,7 +15,7 @@
 
 `ZEle` 会通过 `namespace` 来保存一些数据, 并且在合适的时候销毁这些数据
 
-### `namespace` 与 `namespace` 之间的关联
+## `namespace` 与 `namespace` 之间的关联
 
 通常来说, 旧的 `namespace` 的数据将会在切换到一个新的 `namespace` 的时候销毁
 
@@ -23,9 +23,9 @@
 
 两个页面之间可以通过下横线 `_` 来表示父子关联, 这会带来一些额外的特性
 
-例如存在以下 `namespace` : 
+例如存在以下 `namespace` :
 
-``` 
+```
 user
 user_add
 user_edit

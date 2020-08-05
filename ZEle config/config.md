@@ -2,18 +2,18 @@
 
 本文档将会介绍传入 `Zele` 的 `config` 的格式
 
-``` js
+```javascript
 <ZEle
-	namespace=""
-	config={  }   //  <---- 本文档介绍内容
+    namespace=""
+    config={  }   //  <---- 本文档介绍内容
 />
 ```
 
 `config` 是 `ZEle` 里面的重要参数, 决定了 `ZEle` 渲染的内容
 
-##### config 数据结构
+## config 数据结构
 
-``` js
+```javascript
 {
   layout: '',
   title: '',
@@ -31,25 +31,31 @@
 }
 ```
 
-##### 一个标准的 config 示例
+## 一个标准的 config 示例
 
-该 `config` 可渲染一个较为功能完备的员工列表页
-包括了以下内容
- - 自动获取列表数据
- - 可通过 员工姓名/员工生日 来对列表搜索
- - 对列表数据进行了映射: 性别/状态
- - 可对列表项进行删除
- - 点击 新增/编辑 进行页面跳转
- 
-#### config属性配置
-* layout
-> 页面级别设置，比如layout: 'TitleContnet'
-* title  
-> 标题设置，可选。比如title: '员工管理'
-* items  
-> []里可添加component组件设置,如Search，Tabe，Form
+该 `config` 可渲染一个较为功能完备的员工列表页 包括了以下内容
 
-``` js
+- 自动获取列表数据
+- 可通过 员工姓名/员工生日 来对列表搜索
+- 对列表数据进行了映射: 性别/状态
+- 可对列表项进行删除
+- 点击 新增/编辑 进行页面跳转
+
+### config属性配置
+
+- layout
+
+  > 页面级别设置，比如layout: 'TitleContnet'
+
+- title 
+
+  > 标题设置，可选。比如title: '员工管理'
+
+- items 
+
+  > []里可添加component组件设置,如Search，Tabe，Form
+
+```javascript
 {
   layout: 'TitleContnet', // 页面级别的 Layout
   title: '员工管理',  // 可选, 由上面的 layout 控制显示效果
@@ -64,7 +70,7 @@
       },
     },
     {
-      component: 'Table',	// 渲染一个名为 Table 的组件
+      component: 'Table',    // 渲染一个名为 Table 的组件
       config: {
         API: {
           listAPI: '/api/sys/user', // 组件渲染后, 将会自动调用这个 api 来获取列表数据
@@ -72,8 +78,8 @@
         },
         acitons: [
           { title: '新增员工', type: 'path', options: {
-            	path: '/sys/uers-add',  // 点击新增员工时，跳转到这个页面
-          	}
+                path: '/sys/uers-add',  // 点击新增员工时，跳转到这个页面
+              }
           }
         ],
         fields: [
@@ -102,7 +108,7 @@
         operation: [
           { title: '编辑', type: 'path', options: {
             outside: true,
-            path: '/sys/uers-edit',	// 点击编辑时，跳转到这个页面
+            path: '/sys/uers-edit',    // 点击编辑时，跳转到这个页面
           }
           },
           { title: '删除', type: 'delete' }, // 默认会调用上面的 API.deleteAPI
@@ -112,4 +118,3 @@
   ]
 }
 ```
-
