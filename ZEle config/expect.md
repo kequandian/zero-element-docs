@@ -7,6 +7,11 @@
 - field 需要检测的字段
 - value 该字段的预期值
 
+此外, `expect.value` 也有一些预设的校验规则
+
+- `IS_NULL` 表示数据是 空对象, 空数组, 空字符, null, false 其中之一
+- `IS_NOT_NULL` 表示数据不是 空对象, 空数组, 空字符, null, false 其中之一
+
 ### formfields.expect
 
 `expcet` 可以在 [表单标准字段](./标准%20field/formField/README.md) 里使用
@@ -29,11 +34,6 @@
   }
 }
 ```
-
-此外, `expect.value` 也有一些预设的校验规则
-
-- `IS_NULL` 表示数据是 空对象, 空数组, 空字符, null, false 其中之一
-- `IS_NOT_NULL` 表示数据不是 空对象, 空数组, 空字符, null, false 其中之一
 
 ### rules.expect
 

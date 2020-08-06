@@ -67,7 +67,7 @@
 - [date](./date.md) 日期选择
 - [week](./date.md) 周选择
 - [month](./date.md) 月选择
-- [range](./range.md) 月选择
+- [range](./range.md) 日期区间选择
 - [modal-radio](./modal-radio.md) 在弹出的模态框中选择一条数据
 - [modal-checkbox](./modal-checkbox.md) 在弹出的模态框中选择多条数据
 - [upload-image](./upload-image.md) 上传图片
