@@ -39,13 +39,11 @@ import zeroAntd from './zero-antd-dep';
 node ./init.js && npm start
 ```
 
-> 这些操作的目的是将 `zero-element-antd/lib` 里面的文件当作普通的项目文件来使用
-
-> [这么做的原因](https://github.com/webpack/webpack/issues/10722#issuecomment-629619174)
+> 这些操作的目的是将 `zero-element-antd/lib` 里面的文件当作普通的项目文件来使用 [这么做的原因](https://github.com/webpack/webpack/issues/10722#issuecomment-629619174)
 
 ### 在新项目中使用
 
-推荐直接使用[zero-json](https://github.com/kequandian/zero-json) cli 工具来初始化一个新的项目，这样就无需进行上面的引用步骤
+推荐直接使用 [zero-json](https://github.com/kequandian/zero-json) cli 工具来初始化一个新的项目，这样就无需进行上面的引用步骤
 
 使用命令 `zero-json manage init 项目名称` 即可初始化一个 zero-element 项目的脚手架
 
@@ -60,8 +58,8 @@ import config from './config/page';
 
 export default function Page() {
     return <ZEle
-    namespace = "test"
-    config = {config}
+        namespace = "test"
+        config = {config}
     />
 }
 ```

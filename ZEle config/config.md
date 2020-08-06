@@ -78,8 +78,8 @@
         },
         acitons: [
           { title: '新增员工', type: 'path', options: {
-                path: '/sys/uers-add',  // 点击新增员工时, 跳转到这个页面
-              }
+              path: '/sys/uers-add',  // 点击新增员工时, 跳转到这个页面
+            }
           }
         ],
         fields: [
