@@ -100,9 +100,9 @@ ID | 名称 | 性别
 可用的 `valueType`:
 
 - plain 默认渲染行为, 直接将返回值渲染出来, 不做任何处理
-- [map](./map) 以纯字符串的形式映射返回的值
-- [tag](./tag) 以带有颜色的标签的形式映射返回的值
-- [currency](./currency) 将返回的值渲染为货币形式
-- [percentage](./percentage) 将返回的值渲染为百分号形式
-- [image](./image) 将返回的值渲染为图片, 点击图片可预览大图
-- [ellipsis](./ellipsis) 超过长度限制的文本显示为省略号, 鼠标移上去可显示完整文本
+- [map](./map.md) 以纯字符串的形式映射返回的值
+- [tag](./tag.md) 以带有颜色的标签的形式映射返回的值
+- [currency](./currency.md) 将返回的值渲染为货币形式
+- [percentage](./percentage.md) 将返回的值渲染为百分号形式
+- [image](./image.md) 将返回的值渲染为图片, 点击图片可预览大图
+- [ellipsis](./ellipsis.md) 超过长度限制的文本显示为省略号, 鼠标移上去可显示完整文本

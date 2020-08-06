@@ -14,7 +14,7 @@
 
 - API
 - actions, 用于新增数据等操作
-- fields, 显示列表内容, 是[标准 field](./标准%20field/listField/README.md)
+- fields, 显示列表内容, 是[标准 field](../标准%20field/listField/README.md)
 - operation, 用于 编辑/删除
 
 ```javascript
@@ -72,7 +72,7 @@ actions: [
 
 ### Table 组件 fields 配置
 
-由 [标准 field](./标准%20field/listField/README.md) 组成的列表, 将会渲染成为表格的 `columns`
+由 [标准 field](../标准%20field/listField/README.md) 组成的列表, 将会渲染成为表格的 `columns`
 
 ```javascript
 fields: [
@@ -95,11 +95,11 @@ operation: [
 
 渲染为一个搜索组件, 它会与同一个 `namespace` 下面的 `Table` 绑定 它的主要配置项为
 
-- fields, 是[标准 field](./标准%20field/formField/README.md)
+- fields, 是[标准 field](../标准%20field/formField/README.md)
 
 ### Search 组件 fields 配置
 
-由 [标准 field](./标准%20field/formField/README.md) 组成的列表, 将会渲染成为用于搜索表格的字段域
+由 [标准 field](../标准%20field/formField/README.md) 组成的列表, 将会渲染成为用于搜索表格的字段域
 
 ```javascript
 {
@@ -120,7 +120,7 @@ operation: [
 `Form` 将渲染为一个表单, 它的主要配置为
 
 - API
-- fields, 是[标准 field](./标准%20field/formField/README.md)
+- fields, 是[标准 field](../标准%20field/formField/README.md)
 
 ```javascript
 {
@@ -171,7 +171,7 @@ API: {
 
 #### Form 组件 fields 配置
 
-由 [标准 field](./标准%20field/formField/README.md) 组成的列表, 将会渲染具体的表单域
+由 [标准 field](../标准%20field/formField/README.md) 组成的列表, 将会渲染具体的表单域
 
 ```javascript
 fields: [ { label: '', field: '' }, ... ]

@@ -41,19 +41,23 @@
 - 可对列表项进行删除
 - 点击 新增/编辑 进行页面跳转
 
-### config属性配置
+### 属性配置
 
 - layout
 
-  > 页面级别的 `layout` 设置, 比如 layout: 'TitleContnet'
+  > 页面级别的 `layout` 设置, 通常直接使用 'TitleContnet' 即可
 
 - title
 
-  > 标题设置, 可选。比如 title: '员工管理'
+  > 标题设置, 可选
 
 - items
 
-  > []里可添加component组件设置, 如 Search, Tabe, Form
+  > 以流的形式由上到下渲染一些已注册的 [component](./component/README.md)
+
+  > 通过 `key component` 来指定欲渲染的 [component](./component/README.md)
+
+  > 通过 `key config` 来完成对 `key component` 的配置
 
 ```javascript
 {
