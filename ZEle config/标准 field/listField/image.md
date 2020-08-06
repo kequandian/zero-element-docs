@@ -6,9 +6,7 @@
 
 ### max
 
-选填项
-
-传入 `number`
+选填项 `number`
 
 如若有多张图片, 最多只渲染多少张
 
@@ -16,9 +14,7 @@
 
 ### width
 
-选填项
-
-传入 `number` 或 `string`
+选填项 `number` 或 `string`
 
 渲染的图片的宽度
 
@@ -26,9 +22,7 @@
 
 ### height
 
-选填项
-
-传入 `number` 或 `string`
+选填项 `number` 或 `string`
 
 渲染的图片的高度
 
@@ -36,9 +30,7 @@
 
 ### circle
 
-选填项
-
-传入 `boolean`
+选填项 `boolean`
 
 是否将图片渲染为圆形
 
@@ -46,9 +38,7 @@
 
 ### border
 
-选填项
-
-传入 `boolean`
+选填项 `boolean`
 
 是否在图片周围渲染一条边框, 在纯白色的背景颜色里建议加上这个配置项
 
@@ -56,9 +46,7 @@
 
 ### background
 
-选填项
-
-传入 `boolean`
+选填项 `boolean`
 
 是否以背景图片的样式进行渲染
 

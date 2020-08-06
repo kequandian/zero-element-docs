@@ -6,9 +6,7 @@
 
 ### symbol
 
-选填项
-
-传入 `string`
+选填项 `string`
 
 表示货币的符号
 
@@ -16,17 +14,13 @@
 
 ### color
 
-选填项
-
-传入 `string`
+选填项 `string`
 
 可用来调整文本颜色
 
 ### nullPlaceholder
 
-选填项
-
-传入 `string`
+选填项 `string`
 
 当后端数据返回 `null` 时, 将会显示为 `nullPlaceholder` 传入的值
 
