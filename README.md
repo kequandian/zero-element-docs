@@ -58,8 +58,8 @@ import config from './config/page';
 
 export default function Page() {
     return <ZEle
-        namespace = "test"
-        config = {config}
+        namespace="test"
+        config={config}
     />
 }
 ```
@@ -67,5 +67,5 @@ export default function Page() {
 ## 开发索引
 
 - [数据域说明(namespace)](./ZEle%20namespace/README.md)
-- [配置说明(config)](./ZEle%20config/config.md)
-- [组件说明(compoent)](./ZEle%20config/component.md)
+- [配置说明(config)](./ZEle%20config/README.md)
+- [组件说明(compoent)](./ZEle%20config/README.md)
