@@ -12,9 +12,15 @@ window.ZEle.nav = "LeftNavCollaps";
 
 目前预设了如下的导航风格
 
-- LeftNavCollaps
-- top
+- #### LeftNavCollaps 
+	
+	![预览](./previewImgs/导航风格/LeftNavCollaps.png)
+	
+- #### top
+	![预览](./previewImgs/导航风格/top.png)
+	
 - left
+
 - both
 
 > 该配置为静态变量, 更改后需要手动刷新页面才能生效
