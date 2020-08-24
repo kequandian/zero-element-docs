@@ -37,29 +37,14 @@ window.ZEle.nav = "LeftNavCollaps";
 @ZEle-primary-color-bgColor: #fcd0d0; -- 选中项背景色
 ```
 ### 例子:
-<<<<<<< HEAD
-- @ZEle-primary-color        : #610b0b; -- 连接字体默认颜色
-  
-	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824172729.png)
-  
-- @ZEle-primary-color-light  : #860909; -- 鼠标悬浮 字体颜色
-  
-=======
 - @ZEle-primary-color        : #610b0b; 
    
 	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824172729.png)
 
 - @ZEle-primary-color-light  : #860909; 
    
->>>>>>> c4f32cfe2bd5f3b2e8027a1c69a922d2f4d8dfdb
 	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173327.png)
   
 - @ZEle-primary-color-bgColor: #fcd0d0;
-<<<<<<< HEAD
-  
-	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173551.png)
-  
-=======
    
 	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173551.png)
->>>>>>> c4f32cfe2bd5f3b2e8027a1c69a922d2f4d8dfdb
