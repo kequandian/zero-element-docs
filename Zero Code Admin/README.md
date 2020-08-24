@@ -14,7 +14,7 @@ window.ZEle.nav = "LeftNavCollaps";
 
 - LeftNavCollaps 
 	
-	![LeftNavCollaps.png](https://gitee.com/hdij/this-is-a-project/raw/master/20200824171054.png)
+	![LeftNavCollaps.png](https://gitee.com/hdij/this-is-a-project/raw/master///20200824184541.png)
 	
 - top
 	![top.png](https://cdn.jsdelivr.net/gh/h89916300/this-is-a-project/1598256352452-1598256352443-top.png)
