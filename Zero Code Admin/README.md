@@ -14,10 +14,10 @@ window.ZEle.nav = "LeftNavCollaps";
 
 - #### LeftNavCollaps 
 	
-	![预览](./previewImgs/导航风格/LeftNavCollaps.png)
+	![](https://cdn.jsdelivr.net/gh/h89916300/this-is-a-project/1598256330818-1598256330807-LeftNavCollaps.png)
 	
 - #### top
-	![预览](./previewImgs/导航风格/top.png)
+	![](https://cdn.jsdelivr.net/gh/h89916300/this-is-a-project/1598256352452-1598256352443-top.png)
 	
 - left
 
