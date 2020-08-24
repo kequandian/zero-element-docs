@@ -14,7 +14,7 @@ window.ZEle.nav = "LeftNavCollaps";
 
 - LeftNavCollaps 
 	
-	![LeftNavCollaps.png](https://cdn.jsdelivr.net/gh/h89916300/this-is-a-project/1598256330818-1598256330807-LeftNavCollaps.png)
+	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824182907.png)
 	
 - top
 	![top.png](https://cdn.jsdelivr.net/gh/h89916300/this-is-a-project/1598256352452-1598256352443-top.png)
@@ -38,13 +38,14 @@ window.ZEle.nav = "LeftNavCollaps";
 ```
 ### 例子:
 - @ZEle-primary-color        : #610b0b; -- 连接字体默认颜色
-   
+  
 	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824172729.png)
-
+  
 - @ZEle-primary-color-light  : #860909; -- 鼠标悬浮 字体颜色
-   
+  
 	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173327.png)
-
+  
 - @ZEle-primary-color-bgColor: #fcd0d0;
-   
+  
 	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173551.png)
+  
