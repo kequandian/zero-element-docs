@@ -137,15 +137,15 @@
 
 ### operation type `request`
 
-点击后直接访问api, 如 提交
+点击后直接访问api, 如 提交功能
 
 #### options
 
-##### outside (true or false)
+##### outside (true or false: ) 默认展示或收起按钮
 ##### API `string`
 ##### method post
 
-具体的跳转路由
+### [expect](https://github.com/kequandian/zero-element-docs/blob/master/ZEle%20config/expect.md)
 
 #### 示例
 
@@ -158,7 +158,7 @@
     API: '',
     method: 'post'
   },
-  expected: {}
+  expect: {}
 },
 ```
 
