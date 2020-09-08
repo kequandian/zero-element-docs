@@ -135,6 +135,33 @@
 }
 ```
 
+### operation type `request`
+
+点击后直接访问api, 如 提交
+
+#### options
+
+##### outside (true or false)
+##### API `string`
+##### method post
+
+具体的跳转路由
+
+#### 示例
+
+```javascript
+{
+  title: '提交', 
+  type: 'request',
+  options:{
+    outside: false,
+    API: '',
+    method: 'post'
+  },
+  expected: {}
+},
+```
+
 ### operation type `modal`
 
 点击后弹出一个模态框, 可以用来完成对表格单项数据的编辑
