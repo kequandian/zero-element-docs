@@ -35,6 +35,25 @@
 }
 ```
 
+### listField.expect
+
+`expcet` 可以在 [列表标准字段](./标准%20field/listField/README.md) 里使用
+
+例如, `审核通过` 的按钮, 只会在 `status`的值为 `Pending` 的情况下才会显示
+
+```javascript
+{ title: '审核通过', type: 'request', 
+  options: {
+    API: '/api/review/(id)/pass',
+  },
+  expect: {
+    field: 'status',
+    value: 'Pending',
+  },
+}
+{ title: '删除', type: 'delete' }
+```
+
 ### rules.expect
 
 `expcet` 可以在 `rules` 里使用
