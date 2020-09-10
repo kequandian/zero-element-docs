@@ -99,6 +99,7 @@ ID | 名称 | 性别
 
 可用的 `valueType`:
 
+- [plain](./plain.md) 返回单行或多行模板字符串
 - [map](./map.md) 以纯字符串的形式映射返回的值
 - [tag](./tag.md) 以带有颜色的标签的形式映射返回的值
 - [currency](./currency.md) 将返回的值渲染为货币形式
