@@ -12,18 +12,15 @@ window.ZEle.nav = "LeftNavCollaps";
 
 目前预设了如下的导航风格
 
-- LeftNavCollaps 
-	
-	![LeftNavCollaps.png](https://gitee.com/hdij/this-is-a-project/raw/master///20200824184541.png)
-	
-- top
-	![top.png](https://cdn.jsdelivr.net/gh/h89916300/this-is-a-project/1598256352452-1598256352443-top.png)
-	
-- left
-	![left.png](https://gitee.com/hdij/this-is-a-project/raw/master///20200824171054.png)
+- LeftNavCollaps
 
-- both
-	![both.png](https://gitee.com/hdij/this-is-a-project/raw/master///20200824171218.png)
+  ![LeftNavCollaps.png](https://gitee.com/hdij/this-is-a-project/raw/master///20200824184541.png)
+
+- top ![top.png](https://cdn.jsdelivr.net/gh/h89916300/this-is-a-project/1598256352452-1598256352443-top.png)
+
+- left ![left.png](https://gitee.com/hdij/this-is-a-project/raw/master///20200824171054.png)
+
+- both ![both.png](https://gitee.com/hdij/this-is-a-project/raw/master///20200824171218.png)
 
 > 该配置为静态变量, 更改后需要手动刷新页面才能生效
 
@@ -31,20 +28,41 @@ window.ZEle.nav = "LeftNavCollaps";
 
 主题颜色的定义文件位于 `src/theme.less`, 会直接影响 导航颜色和按钮颜色
 
-```css
+```less
 @ZEle-primary-color        : #610b0b; -- 连接字体默认颜色
 @ZEle-primary-color-light  : #860909; -- 鼠标悬浮 字体颜色
 @ZEle-primary-color-bgColor: #fcd0d0; -- 选中项背景色
 ```
-### 例子:
-- @ZEle-primary-color        : #610b0b; 
-   
-	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824172729.png)
 
-- @ZEle-primary-color-light  : #860909; 
-   
-	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173327.png)
-  
+### 例子:
+
+- @ZEle-primary-color : #610b0b;
+
+  ![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824172729.png)
+
+- @ZEle-primary-color-light : #860909;
+
+  ![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173327.png)
+
 - @ZEle-primary-color-bgColor: #fcd0d0;
-   
-	![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173551.png)
+
+  ![](https://gitee.com/hdij/this-is-a-project/raw/master///20200824173551.png)
+
+`src/theme.less`还可以配置一些组件的颜色
+
+```less
+// ---- 导航 ----
+@ZEle-menu-icon              : white;
+// 顶部导航
+@ZEle-menu-top-bgColor       : #0b4f79;
+@ZEle-menu-top-active-bgColor: #2489c7;
+@ZEle-menu-top-fontColor     : #fff;
+@ZEle-menu-top-fontSize      : 16px;
+
+// 左部导航
+@ZEle-menu-left-bgColor       : white;
+@ZEle-menu-left-active-bgColor: #2489c7;
+@ZEle-menu-left-fontColor     : #0b4f79;
+@ZEle-menu-left-fontSize      : 16px;
+@ZEle-menu-left-active-fontColor: #fff;
+```
