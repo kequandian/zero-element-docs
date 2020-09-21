@@ -65,4 +65,21 @@ window.ZEle.nav = "LeftNavCollaps";
 @ZEle-menu-left-fontColor     : #0b4f79;
 @ZEle-menu-left-fontSize      : 16px;
 @ZEle-menu-left-active-fontColor: #fff;
+
+// 主要，次要，默认按钮颜色配置 -- (如 添加, 导入, 导出 按钮)
+@ZEle-action-primary                : #0b4f79;
+@ZEle-action-primary-fontColor      : #fff;
+@ZEle-action-primary-light          : #6db2dd;
+@ZEle-action-primary-light-fontColor: #fff;
+
+@ZEle-action-secondary                : #0b4f79;
+@ZEle-action-secondary-fontColor      : #fff;
+@ZEle-action-secondary-light          : #6db2dd;
+@ZEle-action-secondary-light-fontColor: #fff;
+
+@ZEle-action-default                : #0b4f79;
+@ZEle-action-default-fontColor      : #fff;
+@ZEle-action-default-light          : #6db2dd;
+@ZEle-action-default-light-fontColor: #fff;
+
 ```
