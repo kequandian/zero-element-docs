@@ -54,6 +54,40 @@
 { title: '删除', type: 'delete' }
 ```
 
+再例如, `审核通过` 的按钮, 只会在 `status`的值为 `Pending` 或 `Reviewing` 的情况下才会显示
+
+```javascript
+{ title: '审核通过', type: 'request', 
+  options: {
+    API: '/api/review/(id)/pass',
+  },
+  expect: {
+    field: 'status',
+    value: ['Pending', 'Reviewing'],
+  },
+}
+```
+
+又例如, `审核通过` 的按钮, 在同时满足以下条件才会出现
+
+- `status`的值为 `Pending` 或 `Reviewing`
+- `attachment`的值非空
+
+```javascript
+{ title: '审核通过', type: 'request', 
+  options: {
+    API: '/api/review/(id)/pass',
+  },
+  expect: {
+    field: ['Pending', 'attachment'],
+    value: [
+      ['Pending', 'Reviewing'],
+      'IS_NOT_NULL'
+    ],
+  },
+}
+```
+
 ### rules.expect
 
 `expcet` 可以在 `rules` 里使用
