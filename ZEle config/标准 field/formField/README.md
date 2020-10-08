@@ -1,4 +1,4 @@
-# 表单标准字段
+# 表单标准字段 [[自定义](./自定义表单field.md)]
 
 `表单标准字段` 通常用于 `Search` `Form` `ChildrenForm` 等表单组件
 
@@ -86,6 +86,7 @@
 - required
 - email
 - phone
+- url
 
 可直接将预设规则的名称传入 `rules`
 
