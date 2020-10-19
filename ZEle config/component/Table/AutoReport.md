@@ -1,5 +1,7 @@
 # component `AutoReport`
 
+自动报表 `AutoReport` 展示数据几乎全部由 api 返回的数据决定
+
 ## config `API`
 
 ### listAPI
