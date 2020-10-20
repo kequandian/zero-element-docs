@@ -43,7 +43,7 @@
 
 ### 属性配置
 
-- layout
+- [layout](./layout/README.md)
 
   > 页面级别的 `layout` 设置, 通常直接使用 'TitleContnet' 即可
 
