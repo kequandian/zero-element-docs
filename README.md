@@ -64,6 +64,14 @@ export default function Page() {
 }
 ```
 
+#### 使用 hash 路由
+修改项目根目录下的 `.umirc.js`
+```javascript
+  history: {
+    type: 'hash',
+  },
+```
+
 ## 开发索引
 
 - [数据域说明(namespace)](./ZEle%20namespace/README.md)
