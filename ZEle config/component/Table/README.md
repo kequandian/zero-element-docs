@@ -67,6 +67,14 @@
 
 模态框的宽度
 
+##### modalStyle `int`
+
+模态框弹出位置 
+  - modalStyle 属性
+  - 默认居中
+  - marginLeft 从左边偏移位置
+  - marginRight 从右边偏移位置
+
 ##### items `config[]`
 
 模态框的具体渲染内容, 有完整的渲染 [config](../../README.md) 的能力
@@ -77,6 +85,7 @@
 { title: '', type: 'modal', options: {
     modalTitle: '添加数据',
     modalWidth: 1000,
+    modalStyle: { marginLeft: 100 },
     items: [
       {
         component: 'Form',
