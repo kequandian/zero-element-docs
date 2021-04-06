@@ -14,7 +14,7 @@
 
 ### formfields.expect
 
-`expcet` 可以在 [表单标准字段](./标准%20field/formField/README.md) 里使用
+`expcet` 可以在 [表单标准字段](/ZEleconfig/标准field/form-field) 里使用
 
 例如, 默认的情况下只显示单选框, 若用户选择了 `其它`, 那么就让用户输入 `其它方式`
 
@@ -37,7 +37,7 @@
 
 ### listField.expect
 
-`expcet` 可以在 [列表标准字段](./标准%20field/listField/README.md) 里使用
+`expcet` 可以在 [列表标准字段](/ZEleconfig/标准field/list-field) 里使用
 
 例如, `审核通过` 的按钮, 只会在 `status`的值为 `Pending` 的情况下才会显示
 

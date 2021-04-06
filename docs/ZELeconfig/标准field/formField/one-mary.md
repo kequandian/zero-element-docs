@@ -24,7 +24,7 @@
 
 ### *fields
 
-必填项 [列表标准字段](../listField/README.md)
+必填项 [列表标准字段](/ZELeconfig/标准field/list-field)
 
 显示出来的列表的字段
 
@@ -40,7 +40,7 @@
 
 同时, 里面的 component 应该使用 `ChildrenForm`
 
-里面的 config 应当与 [Form](../../component/Form.md) 的 `config` 相同
+里面的 config 应当与 [Form](/ZELeconfig/component/Form.md) 的 `config` 相同
 
 ## 完整示例
 

@@ -3,7 +3,7 @@
 `Form` 将渲染为一个表单
 
 - API
-- fields, 是[表单标准字段](../标准%20field/formField/README.md)
+- fields, 是[表单标准字段](/ZEleconfig/标准field/form-field)
 
 --------------------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ API: { updateAPI: '/api/sys/uers/[id]' }
 
 ## config `fields`
 
-由 [表单标准字段](../标准%20field/formField/README.md) 组成的列表, 将会渲染具体的表单域
+由 [表单标准字段](/ZEleconfig/标准field/form-field) 组成的列表, 将会渲染具体的表单域
 
 --------------------------------------------------------------------------------
 

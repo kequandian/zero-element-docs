@@ -1,10 +1,10 @@
 # component `Table`
 
-`Table` 将渲染为一个表格, 可以与 component [Search](../Search.md) 搭配使用
+`Table` 将渲染为一个表格, 可以与 component [Search](/ZEleconfig/component/Search.md) 搭配使用
 
-`Table` 会和同一个 `namespace` 下面的 [Search](../Search.md) 自动绑定, 点击 [Search](../Search.md) 的搜索会自动触发 `Table` 的数据更新
+`Table` 会和同一个 `namespace` 下面的 [Search](/ZEleconfig/component/Search.md) 自动绑定, 点击 [Search](/ZEleconfig/component/Search.md) 的搜索会自动触发 `Table` 的数据更新
 
-> 与之相对的, 同一个 `namespace` 里面应当只有一对 `Table` 与 [Search](../Search.md) 的组合, 不然无法保证搜索逻辑绑定正确
+> 与之相对的, 同一个 `namespace` 里面应当只有一对 `Table` 与 [Search](/ZEleconfig/component/Search.md) 的组合, 不然无法保证搜索逻辑绑定正确
 
 --------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@
 
 --------------------------------------------------------------------------------
 
-## config `actions` [[自定义](./自定义actions.md)]
+## config `actions` [[自定义](/ZEleconfig/component/Table/自定义actions.md)]
 
 一般地, 将 `Table` 的整体性的操作称之为 `actions`, 将会渲染为按钮的形式
 
@@ -77,7 +77,7 @@
 
 ##### items `config[]`
 
-模态框的具体渲染内容, 有完整的渲染 [config](../../README.md) 的能力
+模态框的具体渲染内容, 有完整的渲染 [config](/ZEleconfig/) 的能力
 
 #### 示例
 
@@ -107,11 +107,11 @@
 
 ## config `fields`
 
-由 [列表标准字段](../../标准%20field/listField/README.md) 组成的列表, 将会渲染具体的表格列
+由 [列表标准字段](/ZEleconfig/标准field/list-field) 组成的列表, 将会渲染具体的表格列
 
 --------------------------------------------------------------------------------
 
-## config `operation` [[自定义](./自定义operation.md)]
+## config `operation` [[自定义](/ZEleconfig/component/Table/自定义operation.md)]
 
 一般地, 将对 `Table` 具体数据的操作称之为 `operation`, 会渲染在每项(行)表格数据的右边
 
@@ -187,7 +187,7 @@
 
 ##### items `config[]`
 
-模态框的具体渲染内容, 有完整的渲染 [config](../../README.md) 的能力
+模态框的具体渲染内容, 有完整的渲染 [config](/ZEleconfig) 的能力
 
 #### 示例
 

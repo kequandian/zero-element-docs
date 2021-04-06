@@ -68,7 +68,7 @@
 ]
 ```
 
-### [可选配置项] valueType 与 options [[自定义](./自定义列表valueType.md)]
+### [可选配置项] valueType 与 options [[自定义](/ZEleconfig/标准field/list-field/自定义列表value-type.md)]
 
 通常来说, 表格都是直接将后端返回的数据以字符串的形式直接渲染出来, 通过这两个配置可以将数据渲染为其它形式
 
@@ -99,10 +99,10 @@ ID | 名称 | 性别
 
 可用的 `valueType`:
 
-- [plain](./plain.md) 返回单行或多行模板字符串
-- [map](./map.md) 以纯字符串的形式映射返回的值
-- [tag](./tag.md) 以带有颜色的标签的形式映射返回的值
-- [currency](./currency.md) 将返回的值渲染为货币形式
-- [percentage](./percentage.md) 将返回的值渲染为百分号形式
-- [image](./image.md) 将返回的值渲染为图片, 点击图片可预览大图
-- [ellipsis](./ellipsis.md) 超过长度限制的文本显示为省略号, 鼠标移上去可显示完整文本
+- [plain](/ZEleconfig/标准field/list-field/plain.md) 返回单行或多行模板字符串
+- [map](/ZEleconfig/标准field/list-field/map.md) 以纯字符串的形式映射返回的值
+- [tag](/ZEleconfig/标准field/list-field/tag.md) 以带有颜色的标签的形式映射返回的值
+- [currency](/ZEleconfig/标准field/list-field/currency.md) 将返回的值渲染为货币形式
+- [percentage](/ZEleconfig/标准field/list-field/percentage.md) 将返回的值渲染为百分号形式
+- [image](/ZEleconfig/标准field/list-field/image.md) 将返回的值渲染为图片, 点击图片可预览大图
+- [ellipsis](/ZEleconfig/标准field/list-field/ellipsis.md) 超过长度限制的文本显示为省略号, 鼠标移上去可显示完整文本

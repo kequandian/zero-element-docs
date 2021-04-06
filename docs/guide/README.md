@@ -1,3 +1,4 @@
+
 # [zero-element](https://github.com/kequandian/zero-element)
 
 基于 React、antd 的后台页面快速开发框架。
@@ -74,7 +75,7 @@ export default function Page() {
 
 ## 开发索引
 
-- [数据域说明(namespace)](./ZEle%20namespace/README.md)
-- [配置说明(config)](./ZEle%20config/README.md)
-- [组件说明(compoent)](./ZEle%20config/README.md)
-- [脚手架说明(Zero Code Admin)](./Zero%20Code%20Admin/README.md)
+- [数据域说明(namespace)](/ZElenamespace/)
+- [配置说明(config)](/ZEleconfig/)
+- [组件说明(component)](/ZEleconfig/component/)
+- [脚手架说明(Zero Code Admin)](/code-admin/)

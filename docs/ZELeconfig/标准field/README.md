@@ -4,7 +4,7 @@
 
 目前, `标准 field` 里面包括了 `列表标准字段` 和 `表单标准字段` 两种:
 
-## [列表标准字段](./listField/README.md) [[自定义valueType](./listField/自定义列表valueType.md)]
+## [列表标准字段](/ZEleconfig/标准field/list-field) [[自定义valueType](/ZEleconfig/标准field/list-field/自定义列表value-type.md)]
 
 ```javascript
 // 列表标准字段基本格式
@@ -16,7 +16,7 @@
 }
 ```
 
-## [表单标准字段](./formField/README.md) [[自定义field](./formField/自定义表单field.md)]
+## [表单标准字段](/ZEleconfig/标准field/form-field) [[自定义field](/ZEleconfig/标准field/form-field/自定义表单field.md)]
 
 ```javascript
 // 表单标准字段基本格式

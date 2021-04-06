@@ -43,7 +43,7 @@
 
 ### 属性配置
 
-- [layout](./layout/README.md)
+- [layout](/ZEleconfig/layout)
 
   > 页面级别的 `layout` 设置, 通常直接使用 'TitleContnet' 即可
 
@@ -53,9 +53,9 @@
 
 - items
 
-  > 以流的形式由上到下渲染一些已注册的 [component](./component/README.md)
+  > 以流的形式由上到下渲染一些已注册的 [component](/ZEleconfig/component)
 
-  > 通过 `component` 来指定欲渲染的 [component](./component/README.md)
+  > 通过 `component` 来指定欲渲染的 [component](/ZEleconfig/component)
 
   > 通过 `config` 来完成对 `component` 的配置
 

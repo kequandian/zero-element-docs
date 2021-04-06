@@ -12,13 +12,13 @@
 
 ### *fields
 
-必填项 [列表标准字段](../listField/README.md)
+必填项 [列表标准字段](/ZEleconfig/标准field/list-field/README.md)
 
 模态框里面的列表的字段
 
 ### searchFields
 
-选填项 [表单标准字段](../formField/README.md)
+选填项 [表单标准字段](/ZEleconfig/标准field/form-field/README.md)
 
 模态框里面的 `Search` 的字段
 
