@@ -4,8 +4,8 @@ import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from 'D:/work/项目/zero-element-docs/node_modules/@umijs/runtime';
-import { renderClient } from 'D:/work/项目/zero-element-docs/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from 'D:/work/githublib/zero-element-docs/node_modules/@umijs/runtime';
+import { renderClient } from 'D:/work/githublib/zero-element-docs/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 
 
