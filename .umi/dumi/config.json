@@ -20,7 +20,12 @@
         {
           "title": "脚手架说明",
           "path": "/code-admin",
-          "children": []
+          "children": [
+            {
+              "title": "less样式开发说明",
+              "path": "/code-admin/样式开发说明"
+            }
+          ]
         }
       ],
       "/guide": [
@@ -428,7 +433,13 @@
       },
       {
         "path": "/code-admin",
-        "title": "脚手架说明"
+        "title": "脚手架说明",
+        "children": [
+          {
+            "title": "样式开发说明",
+            "path": "/code-admin/样式开发说明"
+          }
+        ]
       },
       {
         "title": "菜单",

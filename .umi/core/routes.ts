@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from 'D:/work/githublib/zero-element-docs/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from 'F:/work/githublib/works/zero-element-docs/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -9,9 +9,9 @@ export function getRoutes() {
   {
     "path": "/~demos/:uuid",
     "layout": false,
-    "wrappers": [require('D:/work/githublib/zero-element-docs/node_modules/@umijs/preset-dumi/lib/theme/layout').default],
+    "wrappers": [require('F:/work/githublib/works/zero-element-docs/node_modules/@umijs/preset-dumi/lib/theme/layout').default],
     "component": (props) => {
-        const { default: getDemoRenderArgs } = require('D:/work/githublib/zero-element-docs/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+        const { default: getDemoRenderArgs } = require('F:/work/githublib/works/zero-element-docs/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
         const { default: Previewer } = require('dumi-theme-default/src/builtins/Previewer.tsx');
         const { default: demos } = require('@@/dumi/demos');
         const { usePrefersColor } = require('dumi/theme');
@@ -49,11 +49,11 @@ export function getRoutes() {
     "__dumiRoot": true,
     "layout": false,
     "path": "/",
-    "wrappers": [require('D:/work/githublib/zero-element-docs/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('D:/work/githublib/zero-element-docs/node_modules/dumi-theme-default/src/layout.tsx').default],
+    "wrappers": [require('F:/work/githublib/works/zero-element-docs/node_modules/@umijs/preset-dumi/lib/theme/layout').default, require('F:/work/githublib/works/zero-element-docs/node_modules/dumi-theme-default/src/layout.tsx').default],
     "routes": [
       {
         "path": "/",
-        "component": require('D:/work/githublib/zero-element-docs/docs/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/README.md",
@@ -108,7 +108,7 @@ export function getRoutes() {
       },
       {
         "path": "/code-admin",
-        "component": require('D:/work/githublib/zero-element-docs/docs/CodeAdmin/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/CodeAdmin/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/CodeAdmin/README.md",
@@ -144,8 +144,40 @@ export function getRoutes() {
         "title": "Zero Code Admin"
       },
       {
+        "path": "/code-admin/样式开发说明",
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/CodeAdmin/样式开发说明.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/CodeAdmin/样式开发说明.md",
+          "updatedTime": 1618489297579,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "样式开发说明",
+              "heading": "样式开发说明"
+            },
+            {
+              "depth": 2,
+              "value": "rewrite.less文件介绍",
+              "heading": "rewriteless文件介绍"
+            },
+            {
+              "depth": 2,
+              "value": "theme.less文件介绍",
+              "heading": "themeless文件介绍"
+            }
+          ],
+          "title": "样式开发说明",
+          "nav": {
+            "path": "/code-admin",
+            "title": "Code-admin"
+          }
+        },
+        "title": "样式开发说明"
+      },
+      {
         "path": "/guide",
-        "component": require('D:/work/githublib/zero-element-docs/docs/guide/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/guide/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/guide/README.md",
@@ -202,7 +234,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/expect",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/expect.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/expect.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/expect.md",
@@ -244,7 +276,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/README.md",
@@ -281,7 +313,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component/form",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/Form.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/Form.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/Form.md",
@@ -337,7 +369,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/README.md",
@@ -363,7 +395,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component/search",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/Search.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/Search.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/Search.md",
@@ -399,7 +431,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component/自定义component",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/自定义component.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/自定义component.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/自定义component.md",
@@ -430,7 +462,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component/table/auto-report",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/Table/AutoReport.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/Table/AutoReport.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/Table/AutoReport.md",
@@ -471,7 +503,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component/table/item-list",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/Table/ItemList.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/Table/ItemList.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/Table/ItemList.md",
@@ -522,7 +554,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component/table",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/Table/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/Table/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/Table/README.md",
@@ -733,7 +765,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component/table/自定义actions",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/Table/自定义actions.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/Table/自定义actions.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/Table/自定义actions.md",
@@ -764,7 +796,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/component/table/自定义operation",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/component/Table/自定义operation.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/component/Table/自定义operation.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/component/Table/自定义operation.md",
@@ -795,7 +827,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/layout",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/layout/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/layout/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/layout/README.md",
@@ -831,7 +863,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/layout/自定义layout",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/layout/自定义layout.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/layout/自定义layout.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/layout/自定义layout.md",
@@ -867,7 +899,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/README.md",
@@ -903,7 +935,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/form-field/common",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/formField/common.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/formField/common.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/formField/common.md",
@@ -944,7 +976,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/form-field/date",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/formField/date.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/formField/date.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/formField/date.md",
@@ -995,7 +1027,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/form-field/modal-radio",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/formField/modal-radio.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/formField/modal-radio.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/formField/modal-radio.md",
@@ -1076,7 +1108,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/form-field/one-mary",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/formField/one-mary.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/formField/one-mary.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/formField/one-mary.md",
@@ -1137,7 +1169,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/form-field/plain",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/formField/plain.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/formField/plain.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/formField/plain.md",
@@ -1188,7 +1220,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/form-field/range",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/formField/range.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/formField/range.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/formField/range.md",
@@ -1244,7 +1276,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/form-field",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/formField/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/formField/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/formField/README.md",
@@ -1295,7 +1327,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/form-field/自定义表单field",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/formField/自定义表单field.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/formField/自定义表单field.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/formField/自定义表单field.md",
@@ -1326,7 +1358,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field/currency",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/currency.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/currency.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/currency.md",
@@ -1377,7 +1409,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field/ellipsis",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/ellipsis.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/ellipsis.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/ellipsis.md",
@@ -1428,7 +1460,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field/image",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/image.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/image.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/image.md",
@@ -1494,7 +1526,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field/map",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/map.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/map.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/map.md",
@@ -1535,7 +1567,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field/percentage",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/percentage.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/percentage.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/percentage.md",
@@ -1581,7 +1613,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field/plain",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/plain.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/plain.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/plain.md",
@@ -1627,7 +1659,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/README.md",
@@ -1673,7 +1705,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field/tag",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/tag.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/tag.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/tag.md",
@@ -1719,7 +1751,7 @@ export function getRoutes() {
       },
       {
         "path": "/zeleconfig/标准field/list-field/自定义列表value-type",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZELeconfig/标准field/listField/自定义列表valueType.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZELeconfig/标准field/listField/自定义列表valueType.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZELeconfig/标准field/listField/自定义列表valueType.md",
@@ -1750,7 +1782,7 @@ export function getRoutes() {
       },
       {
         "path": "/zelenamespace",
-        "component": require('D:/work/githublib/zero-element-docs/docs/ZElenamespace/README.md').default,
+        "component": require('F:/work/githublib/works/zero-element-docs/docs/ZElenamespace/README.md').default,
         "exact": true,
         "meta": {
           "filePath": "docs/ZElenamespace/README.md",
