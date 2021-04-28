@@ -31,6 +31,7 @@ export default defineConfig({
       children:[
         {title:'样式开发说明',path:'/code-admin/样式开发说明'}
       ]
+<<<<<<< HEAD
     },
     {
       title:'Schema自定义组件',
@@ -39,6 +40,8 @@ export default defineConfig({
     {
       title:'常见问题',
       path:'/problem',
+=======
+>>>>>>> c0cd8501526e7d74ffec191ce26eedb89c381f33
     },
     {
       title:'菜单',
