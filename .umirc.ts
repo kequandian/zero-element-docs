@@ -28,16 +28,32 @@ export default defineConfig({
     {
       path:'/code-admin',
       title:'脚手架说明',
+      children:[
+        {title:'样式开发说明',path:'/code-admin/样式开发说明'}
+      ]
+    },
+    {
+      title:'Schema自定义组件',
+      path:'/自定义组件'
+    },
+    {
+      title:'常见问题',
+      path:'/problem',
     },
     {
       title:'菜单',
       children:[
         {
           path:'http://github.com/kequandian',
-          title:'关于我们',
+          title:'Github',
+        },
+        {
+          title:'Download',
+          path:'http://github.com/kequandian/zero-element-admin'
         },
       ]
-    }
+    },
+
   ],
   menus:{
     '/guide':[
@@ -212,7 +228,7 @@ export default defineConfig({
         title:'脚手架说明',
         path:'/code-admin',
         children:[
-
+          {title:"less样式开发说明",path:"/code-admin/样式开发说明"}
         ]
       }
     ],
