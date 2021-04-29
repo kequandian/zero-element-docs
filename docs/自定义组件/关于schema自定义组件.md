@@ -12,9 +12,9 @@ https://x-render.gitee.io/table-render
 
 ## 如何使用普通组件
 
-打开项目zero-element-admin，找到src目录下-components下的SchemaGeneratorPage文件夹，打开settings.js配置。
+打开项目 zero-element-admin，找到 src 目录下-components 下的 SchemaGeneratorPage 文件夹，打开 settings.js 配置。
 
-配置说明
+### 配置说明
 
 | 配置名                | 说明             |
 | --------------------- | ---------------- |
@@ -29,11 +29,11 @@ https://x-render.gitee.io/table-render
 
 ## 配置自定义组件方法
 
-打开zero-element-admin，前往主目录src/components/SchemaGeneratorPage/components，新增组件js,输入代码，例：
+打开 zero-element-admin，前往主目录 src/components/SchemaGeneratorPage/components，新增组件 js,输入代码，例：
 
-> 要求：输出hello world!
+> 要求：输出 hello world!
 
-新增组件hello.js
+新增组件 hello.js
 
 ```
 export default function(){
@@ -41,7 +41,7 @@ export default function(){
 }
 ```
 
-打开同级目录下的index.js
+打开同级目录下的 index.js
 
 添加
 
@@ -57,7 +57,7 @@ export const widgets={
 }
 ```
 
-中添加Hello,即
+中添加 Hello,即
 
 ```
 export const widgets={
@@ -67,7 +67,7 @@ export const widgets={
 
 新增组件完成，然后我们需要调用它
 
-前往上级目录的settings.js中,找到
+前往上级目录的 settings.js 中,找到
 
 ```
 export const elements ={
@@ -91,110 +91,8 @@ export const elements ={
 
 完成。
 
-## 已定义的自定义组件说明
+## 链接跳转
 
-> 所有组件的用法都是直接在schema中插入，如有更改，会在单独组件中备注。
->
-> ```
-> "ui:widget":"Url"
-> ```
->
-> 即可。
+[已定义自定义组件说明](./已定义自定义组件说明)
 
-### 自定义组件存放地址
-
-src>components>SchemaGeneratorPage>components
-
-### CalendarCom
-
-**说明**
-
-这是一个自定义的日历组件
-
-**用法**
-
-直接在schema中插入
-
-```
-"ui:widget":"CalendarCom"
-```
-
-即可。
-
-### Url
-
-**说明**
-
-这是一个可以定义前后缀的文本组件
-
-**更改方法**
-
-在设置栏中更改
-
-### UserCard
-
-**说明**
-
-一个可输入的用户信息组件
-
-**更改方法**
-
-进入UserCard.js，更改对应的title和label即可
-
-### NowTime
-
-**说明**
-
-显示当前时间
-
-### Elesign
-
-**说明**
-
-签章
-
-**用法**
-
-打开elesign,在src元素中添加src地址
-
-### GetUserName
-
-**说明**
-
-获取当前用户名
-
-### PlaceHolder
-
-**说明**
-
-提示文字
-
-**用法**
-
-打开placeholder，编辑Tiptext
-
-### TreeDir
-
-**说明**
-
-普通文件树
-
-**用法**
-
-打开tree，更改TreeData项
-
-### TreeSelect
-
-**说明**
-
-文件选择树
-
-**用法**
-
-打开tree，更改TreeData项
-
-### GetList
-
-**说明**
-
-获取表单列表
+[自定义组件左右栏配置说明](./自定义组件左右栏配置说明)
