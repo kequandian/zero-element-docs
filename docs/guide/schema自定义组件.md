@@ -1,10 +1,105 @@
 ---
-title: 已定义的自定义组件
+title: schema自定义组件
 toc: menu
-order: 2
+order: 5
 ---
 
-# 已定义的自定义组件说明
+## 关于 form-render
+
+### form-render 的自定义组件
+
+#### 链接跳转
+
+[已定义自定义组件说明](#已定义自定义组件说明)
+
+[自定义组件左右栏配置说明](#自定义组件左右栏配置说明)
+
+#### 官方说明文档
+
+https://x-render.gitee.io/table-render
+
+#### 如何使用普通组件
+
+打开项目 zero-element-admin，找到 src 目录下-components 下的 SchemaGeneratorPage 文件夹，打开 settings.js 配置。
+
+#### 配置说明
+
+| 配置名                | 说明             |
+| --------------------- | ---------------- |
+| defaultCommonSettings | 右侧菜单配件设置 |
+| UserConfig            | 左侧用户组件     |
+| elements              | 左侧基础组件     |
+| advancedElements      | 左侧高级组件     |
+| layouts               | 左侧布局         |
+| saves                 | 样例（已禁用）   |
+| defaultSettings       | 左侧组件的配置   |
+| defaultGlobalSettings | 右侧菜单布局设置 |
+
+#### 配置自定义组件方法
+
+打开 zero-element-admin，前往主目录 src/components/SchemaGeneratorPage/components，新增组件 js,输入代码，例：
+
+> 要求：输出 hello world!
+
+新增组件 hello.js
+
+```
+export default function(){
+	return <h1>Hello World!</h1>
+}
+```
+
+打开同级目录下的 index.js
+
+添加
+
+```
+import Hello from "./hello"
+```
+
+并在
+
+```
+export const widgets={
+	...
+}
+```
+
+中添加 Hello,即
+
+```
+export const widgets={
+	...,Hello
+}
+```
+
+新增组件完成，然后我们需要调用它
+
+前往上级目录的 settings.js 中,找到
+
+```
+export const elements ={
+	...
+}
+```
+
+在它里面的最后添加
+
+```
+{
+   text:'Hello',
+   name:"hello",
+   schema:{
+    type:'string',
+    "ui:widget":"Hello",
+  },
+   widget:"Hello"
+},
+```
+
+完成。
+
+### 已定义的自定义组件
 
 > 所有组件的用法都是直接在 schema 中插入，如有更改，会在单独组件中备注。
 >
@@ -14,11 +109,11 @@ order: 2
 >
 > 即可。
 
-## 自定义组件存放地址
+#### 自定义组件存放地址
 
 根目录下的 src>components>SchemaGeneratorPage>components
 
-## CalendarCom
+#### CalendarCom
 
 **说明**
 
@@ -58,7 +153,7 @@ order: 2
 
 ![](./image/calendar.png)
 
-## Url
+#### Url
 
 **说明**
 
@@ -94,7 +189,7 @@ order: 2
 
 ![](./image/url.png)
 
-## NowTime
+#### NowTime
 
 **说明**
 
@@ -128,7 +223,7 @@ order: 2
 
 ![nowtime](./image/nowtime.png)
 
-## Elesign
+#### Elesign
 
 **说明**
 
@@ -175,7 +270,7 @@ order: 2
 
 ![elesign](./image/elesign.png)
 
-## GetUserName
+#### GetUserName
 
 **说明**
 
@@ -209,7 +304,7 @@ order: 2
 
 ![getusername](./image/getusername.png)
 
-## TreeDir
+#### TreeDir
 
 **说明**
 
@@ -256,7 +351,7 @@ order: 2
 
 ![](./image/treedir.png)
 
-## TreeSelect
+#### TreeSelect
 
 **说明**
 
@@ -303,7 +398,7 @@ order: 2
 
 ![treeselect](./image/treeselect.png)
 
-## GetList
+#### GetList
 
 **说明**
 
@@ -352,8 +447,111 @@ order: 2
 
 ![getList](./image/getList.png)
 
-## 链接跳转
+### form-render 的左右栏配置
 
-### 自定义组件位置
+#### 已有左右栏配置说明
 
-[自定义组件配置说明](./关于schema自定义组件#配置说明)
+|        配置名         |       说明       |
+| :-------------------: | :--------------: |
+| defaultCommonSettings | 右侧菜单配件设置 |
+|      HongConfig       |  左侧宏定义组件  |
+|       elements        |   左侧基础组件   |
+|   advancedElements    |   左侧高级组件   |
+|        layouts        |     左侧布局     |
+|         saves         |  样例（已禁用）  |
+|    defaultSettings    |  左侧组件的配置  |
+| defaultGlobalSettings | 右侧菜单公共设置 |
+
+#### 如何配置左侧栏新配置说明
+
+##### 例子
+
+使用
+
+```
+export const 自定义名= [
+	...内容
+]
+```
+
+然后找到
+
+```
+export const defaultSettings = [
+	...内容
+]
+```
+
+在已有内容后面添加
+
+```
+{
+	title:"名称",
+	widgets:"你刚刚所定义的自定义名"
+}
+```
+
+增加左侧栏配置完成
+
+#### 如何单独配置各个属性的右侧栏新配置说明
+
+##### 官方定义的配置
+
+更多前往[官网旧文档](http://x-components.gitee.io/form-render/config/ui-schema#%E5%85%B1%E9%80%9A%E7%9A%84%E8%A1%A8%E5%8D%95-ui-%E9%85%8D%E7%BD%AE)
+
+使用 setting()来配置，例：
+
+```
+{
+text: '日期选择',
+name: 'date',
+widget: 'date',
+schema: {
+    title: '日期选择',
+    type: 'string',
+    format: 'date',
+    componentType: 'date'
+    },
+setting: {
+    format: {
+        title: '格式',
+        type: 'string',
+        enum: ['dateTime', 'date', 'time'],
+        enumNames: ['日期时间', '日期', '时间'],
+        },
+    },
+},
+```
+
+以上是官方的例子做的设置说明，显示如下
+
+![时间的组件配置](./image/time.png)
+
+##### 如何自定义新配置
+
+同理，直接配置 setting 即可，例：
+
+```
+{
+      text:'电子签章',
+      name:"EleSign",
+      widget:"Elesign",
+      schema:{
+        type:'string',
+        'ui:widget':'Elesign',
+        "ui:width":"220px"
+      },
+      setting:{
+        "src":{
+          title:'签章图片地址',
+          type:'string',
+        }
+    }
+},
+```
+
+如图
+
+![自定义组件的配置](./image/elesignImg.png)
+
+完成。

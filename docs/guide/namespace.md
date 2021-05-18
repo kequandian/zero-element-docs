@@ -1,11 +1,17 @@
+---
+title: 数据域说明
+toc: menu
+order: 3
+---
+
 # ZEle namespace
 
 本文档将会介绍传入 `Zele` 的 `namespace`
 
 ```javascript
 <ZEle
-    namespace=""  //  <---- 本文档介绍内容
-    config={  }
+  namespace="" //  <---- 本文档介绍内容
+  config={}
 />
 ```
 
@@ -15,7 +21,7 @@
 
 `ZEle` 会通过 `namespace` 来保存一些数据, 并且在合适的时候销毁这些数据
 
-## `namespace` 与 `namespace` 之间的关联
+#### `namespace` 与 `namespace` 之间的关联
 
 通常来说, 旧的 `namespace` 的数据将会在切换到一个新的 `namespace` 的时候销毁
 

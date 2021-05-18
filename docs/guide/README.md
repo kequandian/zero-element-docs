@@ -1,3 +1,8 @@
+---
+title: 简介
+toc: menu
+order: 1
+---
 
 # [zero-element](https://github.com/kequandian/zero-element)
 
@@ -17,7 +22,7 @@ npm install zero-element-antd --save-dev
 
 ## 使用
 
-### 在已有的项目中使用
+#### 在已有的项目中使用
 
 如果想在其它项目使用 zero-element, 那么需要如下方式引用:
 
@@ -42,13 +47,13 @@ node ./init.js && npm start
 
 > 这些操作的目的是将 `zero-element-antd/lib` 里面的文件当作普通的项目文件来使用 [这么做的原因](https://github.com/webpack/webpack/issues/10722#issuecomment-629619174)
 
-### 在新项目中使用
+#### 在新项目中使用
 
 推荐直接使用 [zero-json](https://github.com/kequandian/zero-json) cli 工具来初始化一个新的项目，这样就无需进行上面的引用步骤
 
 使用命令 `zero-json manage init 项目名称` 即可初始化一个 zero-element 项目的脚手架
 
---------------------------------------------------------------------------------
+---
 
 最后, 通过 props 传入配置文件 config 即可:
 
@@ -58,15 +63,14 @@ import ZEle from 'zero-element';
 import config from './config/page';
 
 export default function Page() {
-    return <ZEle
-        namespace="test"
-        config={config}
-    />
+  return <ZEle namespace="test" config={config} />;
 }
 ```
 
 #### 使用 hash 路由
+
 修改项目根目录下的 `.umirc.js`
+
 ```javascript
   history: {
     type: 'hash',
