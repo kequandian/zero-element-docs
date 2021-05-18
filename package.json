@@ -1,6 +1,7 @@
 {
   "private": true,
-  "name": "dumi-app",
+  "version": "1.1.0",
+  "name": "zero-element-docs",
   "scripts": {
     "start": "dumi dev",
     "build": "dumi build",
